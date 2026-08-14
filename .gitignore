@@ -1,0 +1,21 @@
+# Archivi e pacchetti
+*.tar
+*.tar.gz
+*.tgz
+*.tar.xz
+*.tar.bz2
+*.deb
+*.rpm
+*.AppImage
+
+# File temporanei e backup
+*~
+*.swp
+*.bak
+*.tmp
+/tmp/
+
+# Log e cache di sistema
+*.log
+.DS_Store
+.directory
