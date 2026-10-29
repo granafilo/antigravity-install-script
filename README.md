@@ -13,9 +13,10 @@ A fast, lightweight, and user-space installer and updater script for **Antigravi
 - 👤 **Zero-Root / User-Space**: Installs cleanly into `~/Applications/` without requiring `sudo` or root privileges.
 - 🔍 **Smart Auto-Detection**: Automatically inspects tarball contents to identify whether you are installing/updating the **IDE** or **Antigravity 2.0 (Chat)**.
 - 🔄 **Seamless Upgrades (`-u` / `--update`)**: In-place replacement of application binaries while preserving user profiles, settings, extensions, and configurations.
+- 📦 **Automated ASAR Icon Extraction**: Automatically unpacks Electron `.asar` bundles (`app.asar`) offline with built-in zero-dependency extractors (Python 3 / Node / native `asar`) to retrieve high-resolution official icons.
 - 🎨 **Complete Desktop Integration**:
-  - Generates valid XDG `.desktop` launchers for application menus and docks.
-  - Generates and installs multi-resolution icons (16x16 up to 1024x1024) into standard `hicolor` icon themes.
+  - Uses the retrieved icon directly in generated XDG `.desktop` launchers for menus and docks.
+  - Generates and installs multi-resolution icons (16x16 up to 1024x1024) into standard `hicolor` themes and `~/.local/share/pixmaps`.
   - Configures MIME type associations and URL protocol handlers.
 - 💻 **CLI Integration**: Automatically adds binaries and wrapper scripts into `~/.local/bin/` (`antigravity-ide`, `antigravity`, `antigravity-chat`).
 - 🛡️ **Electron Compatibility**: Configured with proper sandbox flags (`--no-sandbox`) to prevent common Electron launch issues on modern Linux kernels.
